@@ -28,12 +28,12 @@ function Header() {
 
         <label
           for="menu-toggle"
-          className="md:hidden top-8 absolute right-0 inline-flex text-right cursor-pointer"
+          className="md:hidden top-8 right-10 absolute inline-flex text-right cursor-pointer"
         >
           <svg
             height="80"
             width="80"
-            className="w-20 h-20 text-white fill-current"
+            className="w-[35px] h-[35px] text-white fill-current"
           >
             <path d="M4 10h24a2 2 0 000-4H4a2 2 0 000 4zm24 4H4a2 2 0 000 4h24a2 2 0 000-4zm0 8H4a2 2 0 000 4h24a2 2 0 000-4z" />
           </svg>
