@@ -18,45 +18,67 @@ function App() {
 
 function Header() {
   return (
-    <div className="fixed top-0 z-10 inline-flex justify-center w-full h-24 px-3 py-3 mb-24 overflow-hidden text-center bg-gray-900">
-      <img
-        src={logo_name}
-        alt=""
-        className="left-12 absolute w-auto h-16 m-auto mb-3 text-center"
-      />
+    <header>
+      <div className="md:py-5 fixed top-0 z-10 inline-flex justify-center w-full h-auto px-3 py-16 mb-24 overflow-hidden text-center bg-gray-900">
+        <img
+          src={logo_name}
+          alt=""
+          className="left-12 top-5 absolute w-auto h-16 m-auto mb-3 text-center"
+        />
 
-      <ul className="md:inline-flex md:flex-initial justify-center hidden gap-5 mt-auto mb-auto text-xl font-semibold text-center text-white align-middle">
-        <li>
-          <a className="hover:text-yellow-200" href="#">
-            Principal
-          </a>
-        </li>
-        <li>
-          <a className="hover:text-yellow-200" href="#youtube">
-            YouTube
-          </a>
-        </li>
-        <li>
-          <a className="hover:text-yellow-200" href="#experiencia">
-            Experiencia
-          </a>
-        </li>
-        <li>
-          <a className="hover:text-yellow-200" href="#contacto">
-            Contacto
-          </a>
-        </li>
-      </ul>
-      <a className="md:hidden top-8 absolute right-0 inline-flex text-right">
-        <svg
-          height="80"
-          width="80"
-          className="w-20 h-20 text-white fill-current"
+        <label
+          for="menu-toggle"
+          className="md:hidden top-8 absolute right-0 inline-flex text-right cursor-pointer"
         >
-          <path d="M4 10h24a2 2 0 000-4H4a2 2 0 000 4zm24 4H4a2 2 0 000 4h24a2 2 0 000-4zm0 8H4a2 2 0 000 4h24a2 2 0 000-4z" />
-        </svg>
-      </a>
-    </div>
+          <svg
+            height="80"
+            width="80"
+            className="w-20 h-20 text-white fill-current"
+          >
+            <path d="M4 10h24a2 2 0 000-4H4a2 2 0 000 4zm24 4H4a2 2 0 000 4h24a2 2 0 000-4zm0 8H4a2 2 0 000 4h24a2 2 0 000-4z" />
+          </svg>
+        </label>
+        <input className="hidden" type="checkbox" id="menu-toggle" />
+
+        <ul
+          id="menu"
+          className="md:inline-flex md:flex-initial justify-center hidden gap-5 py-5 mt-auto mb-auto text-xl font-semibold text-center text-white align-middle"
+        >
+          <li>
+            <a className="hover:text-yellow-200" href="#">
+              Principal
+            </a>
+          </li>
+          <li>
+            <a className="hover:text-yellow-200" href="#youtube">
+              YouTube
+            </a>
+          </li>
+          <li>
+            <a className="hover:text-yellow-200" href="#experiencia">
+              Experiencia
+            </a>
+          </li>
+          <li>
+            <a className="hover:text-yellow-200" href="#contacto">
+              Contacto
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div className="hidden px-4">
+        <div className="max-w-3xl p-16 mx-auto my-16 bg-white rounded-lg">
+          <h1 className="mb-2 text-2xl font-medium">Dropdown</h1>
+          <h2 className="mb-4 text-sm font-medium tracking-wide text-red-500 uppercase">
+            Responsive Bar
+          </h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+          doloremque recusandae veniam laudantium. Quaerat error totam labore,
+          alias incidunt minus numquam minima autem quod tenetur laudantium
+          optio a provident exercitationem.
+        </div>
+      </div>
+    </header>
   );
 }
 
@@ -158,11 +180,11 @@ function YouTube() {
           {/* Imagen a la izquierda si está en móvil */}
           <img
             src="./hytale-logo.png"
-            className="lg:hidden h-72 block m-auto"
+            className="lg:hidden sm:h-72 block h-48 m-auto"
             alt=""
           />
 
-          <div className="lg:pl-4 pl-20 pr-4 text-left">
+          <div className="lg:pl-4 sm:pl-20 pl-10 pr-4 text-left">
             <h1>Hytale</h1>
             <div className="justify-start max-w-xl m-0 mt-3">
               <div className="text-xl font-normal text-left text-white">
@@ -229,7 +251,7 @@ function YouTube() {
 
 function Skills() {
   return (
-    <div className="p-36 inline-flex justify-center w-full h-full mt-0 text-center bg-red-900">
+    <div className="inline-flex justify-center w-full h-full p-10 m-auto mt-0 text-center bg-red-900">
       <div>
         <div className="text-center">
           <h1 id="experiencia">Experiencia</h1>
@@ -271,7 +293,7 @@ function Skill(props) {
         props.background +
         " border-solid border-2 border-yellow-300 border-opacity-20 " +
         " ease-in-out duration-300 " +
-        "hover:border-opacity-100"
+        "hover:border-opacity-100 xl:max-w-md max-w-full"
       }
     >
       <h2 class="text-xl font-bold mb-2 text-shadow text-gray-100">

@@ -15,6 +15,9 @@
     .btn {
         @apply hover:bg-white hover:text-red-600 h-16 px-3 py-3 m-3 text-white transition-all duration-150 ease-in-out bg-red-600 rounded-lg shadow-lg fill-current
     }
+    #menu-toggle:checked + #menu {
+        display: block;
+    }
 
     .skills {
         width: 70%;
