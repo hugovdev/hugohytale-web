@@ -266,7 +266,7 @@ function Skills() {
             name="Java"
             link="https://www.java.com"
             background="from-purple-500 to-indigo-500"
-            description="Mi experiencia con Java se remonta a 2016. Todo empezó gracias a los servidores de Minecraft, yo ayudaba y/o creaba minijuegos y experiencias en ellos. A pesar de mi experienciaa sigo aprendiendo cada día."
+            description="Mi experiencia con Java se remonta a 2016. Todo empezó gracias a los servidores de Minecraft, yo ayudaba y/o creaba minijuegos y experiencias en ellos. A pesar de mi experiencia sigo aprendiendo cada día."
           />
           <Skill
             name="CSS + React"
