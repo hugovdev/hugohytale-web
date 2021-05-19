@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+    .App-logo {
+        height: 50vmin;
+        pointer-events: none;
+    }
+    h1 {
+        @apply text-4xl font-bold text-white;
+    }
+    .description {
+        @apply max-w-3xl text-xl font-medium text-center text-gray-200 py-6 m-auto;
+    }
+    .btn {
+        @apply hover:bg-white hover:text-red-600 h-16 px-3 py-3 m-3 text-white transition-all duration-150 ease-in-out bg-red-600 rounded-lg shadow-lg fill-current
+    }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    .skills {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .skill {
+        width: 260px;
+        height: 350px;
+        background: linear-gradient( to bottom, rgb(194, 62, 165), rgb(173, 55, 154));
+        border-radius: 15px;
+        padding: 20px;
+        margin: 25px;
+        text-align: left;
+    }
+    .skillDescription {
+        color: white;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 0px;
+    }
+    .skillTitle {
+        color: white;
+        font-weight: 625;
+        font-size: 20px;
+    }
+    .progressBarContainer {
+        width: 70%;
+        margin-top: 20px;
+        height: 18px;
+    }
+    .progressBar {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        background-color: white;
+    }
+    .fullProgressBar {
+        margin-top: 20px;
+        width: 70%;
+        height: 18px;
+        border-radius: 5px;
+        background-color: rgb(251, 125, 255);
+    }
+    @keyframes App-logo-spin {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
 }
