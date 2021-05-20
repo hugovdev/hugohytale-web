@@ -2,91 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 @layer components {
-    .App-logo {
-        height: 50vmin;
-        pointer-events: none;
-    }
-    h1 {
-        @apply text-4xl font-bold text-white;
-    }
-    .description {
-        @apply max-w-3xl text-xl font-medium text-center text-gray-200 py-6 m-auto;
-    }
-    .btn {
-        @apply hover:bg-white hover:text-red-600 h-16 px-3 py-3 m-3 text-white transition-all duration-150 ease-in-out bg-red-600 rounded-lg shadow-lg fill-current
-    }
-    #menu-toggle:checked + #menu {
-        display: block;
-    }
-
-    .skills {
-        width: 70%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .skill {
-        width: 260px;
-        height: 350px;
-        background: linear-gradient( to bottom, rgb(194, 62, 165), rgb(173, 55, 154));
-        border-radius: 15px;
-        padding: 20px;
-        margin: 25px;
-        text-align: left;
-    }
-    .skillDescription {
-        color: white;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 0px;
-    }
-    .skillTitle {
-        color: white;
-        font-weight: 625;
-        font-size: 20px;
-    }
-    .progressBarContainer {
-        width: 70%;
-        margin-top: 20px;
-        height: 18px;
-    }
-    .progressBar {
-        width: 100%;
-        height: 100%;
-        border-radius: 5px;
-        background-color: white;
-    }
-    .fullProgressBar {
-        margin-top: 20px;
-        width: 70%;
-        height: 18px;
-        border-radius: 5px;
-        background-color: rgb(251, 125, 255);
-    }
-    @keyframes App-logo-spin {
-        from {
-            transform: rotate(0deg);
-        }
-        to {
-            transform: rotate(360deg);
-        }
-    }
+  .App-logo {
+    height: 50vmin;
+    pointer-events: none;
+  }
+  h1 {
+    @apply text-4xl font-bold text-white;
+  }
+  .description {
+    @apply max-w-3xl py-6 m-auto text-xl font-medium text-center text-gray-200;
+  }
+  .btn {
+    @apply hover:bg-white hover:text-red-600 h-16 px-3 py-3 m-3 text-white transition-all duration-150 ease-in-out bg-red-600 rounded-lg shadow-lg fill-current;
+  }
+  #menu-toggle:checked + #menu {
+    display: block;
+  }
 }
 
-    @variants responsive {
-        .text-shadow-sm {
-            text-shadow: 1px 1px 2px black;
-          }
-        .text-shadow {
-          text-shadow: 2px 2px 4px black;
-        }
-        .text-shadow-md {
-          text-shadow: 4px 4px 8px black;
-        }
-        .text-shadow-lg {
-          text-shadow: 15px 15px 30px black;
-        }
-        .text-shadow-none {
-          text-shadow: none;
-        }
-    } 
+@variants responsive {
+  .text-shadow-sm {
+    text-shadow: 1px 1px 2px black;
+  }
+  .text-shadow {
+    text-shadow: 2px 2px 4px black;
+  }
+  .text-shadow-md {
+    text-shadow: 4px 4px 8px black;
+  }
+  .text-shadow-lg {
+    text-shadow: 15px 15px 30px black;
+  }
+  .text-shadow-none {
+    text-shadow: none;
+  }
+}

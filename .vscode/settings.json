@@ -1,3 +1,4 @@
 {
-    "editor.codeActionsOnSave": null
+    "editor.codeActionsOnSave": null,
+    "editor.formatOnSave": true
 }
