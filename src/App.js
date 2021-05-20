@@ -20,11 +20,13 @@ function Header() {
   return (
     <header>
       <div className="md:py-5 fixed top-0 z-10 inline-flex justify-center w-full h-auto px-3 py-16 mb-24 overflow-hidden text-center bg-gray-900">
-        <img
-          src={logo_name}
-          alt=""
-          className="left-12 top-5 absolute w-auto h-16 m-auto mb-3 text-center"
-        />
+        <a href="https://hugohytale-web.vercel.app/">
+          <img
+            src={logo_name}
+            alt=""
+            className="left-12 top-5 absolute w-auto h-16 m-auto mb-3 text-center"
+          />
+        </a>
 
         <label
           for="menu-toggle"
