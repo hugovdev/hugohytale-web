@@ -293,13 +293,14 @@ function Skill(props) {
         props.background +
         " border-solid border-2 border-yellow-300 border-opacity-20 " +
         " ease-in-out duration-300 " +
-        "hover:border-opacity-100 xl:max-w-md max-w-full"
+        "hover:border-opacity-100 xl:max-w-md max-w-full text-left"
       }
     >
-      <h2 class="text-xl font-bold mb-2 text-shadow text-gray-100">
+      <h2 class="text-xl font-medium mb-3 text-shadow uppercase text-white tracking-wide">
         {props.name}
       </h2>
-      <p class="font-normal text-gray-200 text-lg text-shadow mb-4 text-left">
+      <hr />
+      <p class=" mt-5 font-normal text-gray-200 text-lg mb-4">
         {props.description}
       </p>
     </div>
