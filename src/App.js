@@ -96,10 +96,7 @@ function Main() {
               alt="logo"
             />
 
-            <span
-              id="experiencia"
-              className="bg-gradient-to-r bg-clip-text from-red-600 to-rose-800 sm:text-7xl w-auto text-6xl font-bold text-transparent"
-            >
+            <span className="bg-gradient-to-r bg-clip-text from-red-600 to-rose-800 sm:text-7xl w-auto text-6xl font-bold text-transparent">
               ¡Hola!
             </span>
             <div className="description max-w-xl m-auto text-center">
@@ -278,7 +275,7 @@ function Skills() {
           </div>
         </div>
 
-        <div className="xl:grid-cols-3 xl:gap-8 lg:w-5/6 grid w-full grid-cols-1 gap-6 m-auto">
+        <div className="lg:grid-cols-3 lg:gap-8 xl:w-5/6 grid w-full grid-cols-1 gap-6 m-auto">
           <Skill
             name="Java"
             background="from-purple-500 to-indigo-500"
