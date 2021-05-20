@@ -90,7 +90,12 @@ function Main() {
       <div className="w-5/6 m-auto">
         <div className="lg:grid-cols-2 md:grid-cols-1 grid">
           <div className="text-center">
-            <img src={logo} className="h-96 mt-40 ml-auto mr-auto" alt="logo" />
+            <img
+              src={logo}
+              className="sm:h-96 h-72 mt-40 ml-auto mr-auto"
+              alt="logo"
+            />
+
             <h1>¡Hola, soy Hugo!</h1>
             <div className="description max-w-xl m-auto text-center">
               Me llamo Hugo. Soy un estudiante de informática y YouTuber en mis
@@ -182,7 +187,7 @@ function YouTube() {
           {/* Imagen a la izquierda si está en móvil */}
           <img
             src="./hytale-logo.png"
-            className="lg:hidden sm:h-72 block h-48 m-auto"
+            className="lg:hidden sm:h-72 block h-40 m-auto"
             alt=""
           />
 
@@ -258,7 +263,7 @@ function Skills() {
         <div className="text-center">
           <span
             id="experiencia"
-            className="bg-gradient-to-r bg-clip-text from-blue-400 to-purple-400 text-7xl w-auto font-bold text-transparent"
+            className="bg-gradient-to-r bg-clip-text from-blue-400 to-purple-400 sm:text-6xl md:text-7xl w-auto text-5xl font-bold text-transparent"
           >
             Experiencia
           </span>
@@ -316,7 +321,7 @@ function Contacto() {
       className="items-center justify-start w-full h-full py-10 text-center bg-gray-700"
       id="contacto"
     >
-      <span className="bg-gradient-to-r bg-clip-text from-green-500 to-green-400 sm:text-7xl w-auto text-6xl font-bold text-transparent">
+      <span className="bg-gradient-to-r bg-clip-text from-green-500 to-green-400 sm:text-6xl md:text-7xl w-auto text-5xl font-bold text-transparent">
         ¡Contáctame!
       </span>
       <img
