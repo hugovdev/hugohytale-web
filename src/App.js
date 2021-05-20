@@ -86,7 +86,7 @@ function Header() {
 
 function Main() {
   return (
-    <div className="items-center justify-center w-full h-full pb-10 bg-red-900">
+    <div className="items-center justify-center w-full h-full pb-10 bg-gray-800">
       <div className="w-5/6 m-auto">
         <div className="lg:grid-cols-2 md:grid-cols-1 grid">
           <div className="text-center">
@@ -167,7 +167,7 @@ function VideoRate() {
 function YouTube() {
   return (
     <div
-      className="items-center justify-center w-full h-full pb-10 bg-red-800"
+      className="items-center justify-center w-full h-full pb-10 bg-gray-700"
       id="youtube"
     >
       <div className="xl:w-4/6 lg:w-5/6 py-10 m-auto">
@@ -253,10 +253,15 @@ function YouTube() {
 
 function Skills() {
   return (
-    <div className="inline-flex justify-center w-full h-full p-10 m-auto mt-0 text-center bg-red-900">
+    <div className="inline-flex justify-center w-full h-full p-10 m-auto mt-0 text-center bg-gray-800">
       <div>
         <div className="text-center">
-          <h1 id="experiencia">Experiencia</h1>
+          <span
+            id="experiencia"
+            className="bg-gradient-to-r bg-clip-text from-blue-400 to-purple-400 text-7xl w-auto font-bold text-transparent"
+          >
+            Experiencia
+          </span>
           <div className="description">
             Esta es la experiencia que tengo con las tecnologías más relevantes
             actuales.
@@ -266,20 +271,17 @@ function Skills() {
         <div className="xl:grid-cols-3 xl:gap-8 lg:w-5/6 grid w-full grid-cols-1 gap-6 m-auto">
           <Skill
             name="Java"
-            link="https://www.java.com"
             background="from-purple-500 to-indigo-500"
             description="Mi experiencia con Java se remonta a 2016. Todo empezó gracias a los servidores de Minecraft, yo ayudaba y/o creaba minijuegos y experiencias en ellos. A pesar de mi experiencia sigo aprendiendo cada día."
           />
           <Skill
             name="CSS + React"
-            link="https://es.reactjs.org/"
-            background="from-pink-500 to-rose-500"
+            background="from-pink-600 to-rose-600"
             description="Mi experiencia de CSS sale de un grado superior de desarrollo de aplicaciones web. En cuanto a React todavía estoy investigándolo y aprendiendo día a día, ya que soy bastante nuevo."
           />
           <Skill
             name="MySQL"
-            link="https://www.mysql.com/"
-            background="from-yellow-400 to-orange-500"
+            background="from-yellow-600 to-orange-600"
             description="El grado superior que he estudiado (Desarrollo de Aplicaciones Web) me ha abierto los ojos en cuanto a bases de datos. Hemos estudiado a fondo las bases de datos, su funcionamiento, diseño y lenguajes."
           />
         </div>
@@ -293,16 +295,16 @@ function Skill(props) {
       className={
         "relative rounded-3xl p-5 bg-gradient-to-br " +
         props.background +
-        " border-solid border-2 border-yellow-300 border-opacity-20 " +
-        " ease-in-out duration-300 " +
-        "hover:border-opacity-100 xl:max-w-md max-w-full text-left"
+        " border-solid border-2 border-yellow-300 border-opacity-20" +
+        " ease-in-out duration-300" +
+        " hover:border-opacity-100 xl:max-w-md max-w-full text-left"
       }
     >
-      <h2 class="text-xl font-medium mb-3 text-shadow uppercase text-white tracking-wide">
+      <h2 class="text-xl font-medium mb-3 uppercase text-white tracking-wide">
         {props.name}
       </h2>
       <hr />
-      <p class=" mt-5 font-normal text-gray-200 text-lg mb-4">
+      <p class=" mt-5 font-normal text-gray-100 text-lg mb-4">
         {props.description}
       </p>
     </div>
@@ -311,11 +313,12 @@ function Skill(props) {
 function Contacto() {
   return (
     <div
-      className="items-center justify-start w-full h-full pb-10 text-center bg-red-800"
+      className="items-center justify-start w-full h-full py-10 text-center bg-gray-700"
       id="contacto"
     >
-      <h1 className="pt-10 pb-5">¡Contáctame!</h1>
-
+      <span className="bg-gradient-to-r bg-clip-text from-green-500 to-green-400 text-7xl w-auto font-bold text-transparent">
+        ¡Contáctame!
+      </span>
       <img
         src={contact}
         className="py-10 m-auto"
