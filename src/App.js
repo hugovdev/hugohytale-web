@@ -96,7 +96,12 @@ function Main() {
               alt="logo"
             />
 
-            <h1>¡Hola, soy Hugo!</h1>
+            <span
+              id="experiencia"
+              className="bg-gradient-to-r bg-clip-text from-red-600 to-rose-800 sm:text-7xl w-auto text-6xl font-bold text-transparent"
+            >
+              ¡Hola!
+            </span>
             <div className="description max-w-xl m-auto text-center">
               Me llamo Hugo. Soy un estudiante de informática y YouTuber en mis
               tiempos libres. Abajo tienes más información sobre cada uno de los
@@ -321,7 +326,7 @@ function Contacto() {
       className="items-center justify-start w-full h-full py-10 text-center bg-gray-700"
       id="contacto"
     >
-      <span className="bg-gradient-to-r bg-clip-text from-green-500 to-green-400 sm:text-6xl md:text-7xl w-auto text-5xl font-bold text-transparent">
+      <span className="bg-gradient-to-r bg-clip-text from-green-500 to-green-300 sm:text-6xl md:text-7xl w-auto text-5xl font-bold text-transparent">
         ¡Contáctame!
       </span>
       <img
