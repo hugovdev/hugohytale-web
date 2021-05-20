@@ -316,7 +316,7 @@ function Contacto() {
       className="items-center justify-start w-full h-full py-10 text-center bg-gray-700"
       id="contacto"
     >
-      <span className="bg-gradient-to-r bg-clip-text from-green-500 to-green-400 text-7xl w-auto font-bold text-transparent">
+      <span className="bg-gradient-to-r bg-clip-text from-green-500 to-green-400 sm:text-7xl w-auto text-6xl font-bold text-transparent">
         ¡Contáctame!
       </span>
       <img
