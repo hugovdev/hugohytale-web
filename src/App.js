@@ -20,7 +20,7 @@ function Header() {
   return (
     <header>
       <div className="md:py-5 fixed top-0 z-10 inline-flex justify-center w-full h-auto px-3 py-16 mb-24 overflow-hidden text-center bg-gray-900">
-        <a href="https://hugohytale-web.vercel.app/">
+        <a href="https://www.hugoyt.me/">
           <img
             src={logo_name}
             alt=""
