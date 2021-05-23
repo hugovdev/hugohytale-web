@@ -9,12 +9,12 @@ const Header = () => {
 
   return (
     <header>
-      <div className="md:py-5 fixed top-0 z-10 inline-flex justify-center w-full h-auto px-3 py-16 mb-24 overflow-hidden text-center bg-gray-900">
+      <div className="md:py-5 py-[54px] fixed top-0 z-10 inline-flex justify-center w-full h-auto px-3 mb-24 overflow-hidden text-center bg-gray-900">
         <a href="https://www.hugoyt.me/">
           <img
             src={logo_name}
             alt=""
-            className="left-12 top-5 absolute w-auto h-16 m-auto mb-3 text-center"
+            className="sm:left-12 sm:top-5 left-2 top-7 sm:h-16 absolute w-auto h-12 m-auto mb-3 text-center"
           />
         </a>
 
@@ -34,7 +34,7 @@ const Header = () => {
         <select
           name="language"
           id="language-selector"
-          className="absoulte rounded-xl top-8 right-10 md:inline-flex hover:bg-red-500 hover:text-gray-200 absolute hidden w-32 h-8 px-2 font-medium text-right text-white bg-red-600 cursor-pointer"
+          className="rounded-xl md:top-10 md:right-10 top-8 right-24 hover:bg-red-500 hover:text-gray-200 absolute w-32 h-8 px-2 font-medium text-right text-white bg-red-600 cursor-pointer"
           onChange={(ls) => {
             setLang(ls.target.value);
           }}
