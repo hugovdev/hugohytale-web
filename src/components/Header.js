@@ -34,7 +34,7 @@ const Header = () => {
         <select
           name="language"
           id="language-selector"
-          className="rounded-xl md:top-10 md:right-10 top-8 right-24 hover:bg-red-500 hover:text-gray-200 absolute w-32 h-8 px-2 font-medium text-right text-white bg-red-600 cursor-pointer"
+          className="rounded-xl md:top-10 md:right-10 top-8 right-24 hover:bg-red-700 hover:scale-[1.02] ease-in-out duration-150 transform hover:text-white px-auto absolute w-32 h-8 px-6 font-medium text-right text-gray-200 bg-red-600 cursor-pointer"
           onChange={(ls) => {
             setLang(ls.target.value);
           }}

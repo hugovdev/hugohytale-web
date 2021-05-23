@@ -36,7 +36,7 @@ const Welcome = () => {
         <div className="mt-14 inline-flex content-center justify-center w-full m-auto text-center">
           <a
             href="https://www.twitter.com/HugoHytale"
-            className="flex text-center"
+            className="flex text-center hover:scale-[1.02] ease-in-out duration-150 transform"
           >
             <svg className="btn" viewBox="0 0 512 512">
               <path d="M512 97.25a218.84 218.84 0 01-60.48 16.57c21.76-12.99 38.37-33.4 46.18-58.01a209.77 209.77 0 01-66.56 25.4A105.18 105.18 0 00354.46 48c-58.1 0-104.9 47.17-104.9 105 0 8.31.71 16.31 2.44 23.93-87.26-4.26-164.48-46.08-216.35-109.8a105.68 105.68 0 00-14.37 53.06c0 36.35 18.72 68.58 46.62 87.23-16.86-.32-33.4-5.21-47.42-12.92v1.15c0 51 36.38 93.37 84.1 103.13a104.76 104.76 0 01-27.52 3.46c-6.72 0-13.5-.38-19.88-1.8 13.6 41.58 52.2 72.14 98.08 73.13a210.9 210.9 0 01-130.14 44.77c-8.6 0-16.86-.39-25.12-1.44C46.5 446.88 101.6 464 161.02 464c193.16 0 298.76-160 298.76-298.69 0-4.64-.16-9.12-.39-13.57 20.83-14.78 38.34-33.24 52.61-54.5z" />
@@ -44,14 +44,17 @@ const Welcome = () => {
           </a>
           <a
             href="https://www.youtube.com/channel/UClv4gueyMGyxd2WAFiboLow"
-            className="flex text-center"
+            className="flex text-center hover:scale-[1.02] ease-in-out duration-150 transform"
           >
             <svg className="btn" viewBox="0 0 512 512">
               <path d="M490.24 113.92c-13.89-24.7-28.96-29.25-59.65-30.98C399.94 80.86 322.85 80 256.06 80c-66.9 0-144.03.86-174.65 2.91-30.63 1.76-45.73 6.27-59.75 31.01C7.36 138.59 0 181.09 0 255.9v.26c0 74.5 7.36 117.31 21.66 141.73 14.02 24.7 29.1 29.18 59.72 31.26 30.65 1.8 107.77 2.85 174.68 2.85 66.79 0 143.88-1.06 174.56-2.82 30.7-2.08 45.76-6.56 59.65-31.26C504.7 373.5 512 330.69 512 256.19v-.16-.1c0-74.84-7.3-117.34-21.76-142.01zM192 352V160l160 96-160 96z" />
             </svg>
           </a>
 
-          <a href="https://discord.gg/Uwm94ym" className="flex text-center">
+          <a
+            href="https://discord.gg/Uwm94ym"
+            className="flex text-center hover:scale-[1.02] ease-in-out duration-150 transform"
+          >
             <svg
               className="btn"
               height="64"
