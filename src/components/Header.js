@@ -34,13 +34,17 @@ const Header = () => {
         <select
           name="language"
           id="language-selector"
-          className="rounded-xl md:top-10 md:right-10 top-8 right-24 hover:bg-red-700 hover:scale-[1.02] ease-in-out duration-150 transform hover:text-white px-auto absolute w-32 h-8 px-6 font-medium text-right text-gray-200 bg-red-600 cursor-pointer"
+          className="md:top-10 md:right-10 top-8 right-24 hover:bg-red-700 hover:scale-[1.02] ease-in-out duration-150 transform hover:text-white px-auto absolute w-32 h-8 px-6 font-medium text-right text-gray-200 bg-red-600 cursor-pointer"
           onChange={(ls) => {
             setLang(ls.target.value);
           }}
         >
-          <option value="en">English</option>
-          <option value="es">Español</option>
+          <option value="en" className="font-medium text-black bg-gray-100">
+            English
+          </option>
+          <option value="es" className="font-medium text-black bg-gray-100">
+            Español
+          </option>
         </select>
 
         <input className="hidden" type="checkbox" id="menu-toggle" />
