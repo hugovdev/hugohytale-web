@@ -1,0 +1,104 @@
+{
+  "title": {
+    "welcome": {
+      "es": "¡Hola!",
+      "en": "Hello!"
+    },
+    "experience": {
+      "es": "Experiencia",
+      "en": "Experience"
+    },
+    "contact": {
+      "es": "Contáctame!",
+      "en": "Contact me!"
+    }
+  },
+  "text": {
+    "welcome": {
+      "es": "Me llamo Hugo y soy un estudiante de informática y YouTuber en mis tiempos libres. Actualmente estoy estudiando HTML, CSS y desarrollo Frontend en general. ¡Echa un vistazo a las secciones de la página haciendo click arriba!",
+      "en": "My name is Hugo, I'm a tech student currently learning HTML, CSS and Frontend development in general. I also have YouTube channel in spanish. Check out the different sections of my site clicking on the navbar!"
+    },
+    "hytale": {
+      "videoExplanation": {
+        "es": "Este es un vídeo en el que hablo por qué para mi Hytale es diferente a otros juegos.",
+        "en": "In this spanish video I explain why Hytale is so different to any other games."
+      },
+      "description": {
+        "es": "Mi canal de YouTube está basado en Hytale. Este es un vídeojuego creado por Hypixel Studios el cual dispondrá de un modo aventura (solo o cooperativo), herramientas de modding (modelos, texturas, animaciones, bloques, efectos, sonidos, etc.) y servidores.",
+        "en": "Mi channel is about a game called Hytale. This game is being developed by Hypixel Studios. This game will have an adventure mode (solo or coop), modding tools (model creation, texturing, animation, blocks, effects, sounds, etc.) and servers."
+      },
+      "myObjectives": {
+        "es": "Este juego promete mucho y si termina entregando lo que promete lo cambiará todo, por eso tengo algunos proyectos en mente:",
+        "en": "This game promises a lot and if it ends up delivering, it will change everything, that is why I have some projects in mind:"
+      }
+    },
+    "experience": {
+      "description": {
+        "es": "Esta es la experiencia que tengo con las tecnologías más relevantes actuales.",
+        "en": "This is the experience I have with the most relevant technologies."
+      },
+      "java": {
+        "es": "Mi experiencia con Java se remonta a 2016. Todo empezó gracias a los servidores de Minecraft, yo ayudaba y/o creaba minijuegos y experiencias en ellos. A pesar de mi experiencia sigo aprendiendo cada día.",
+        "en": "My experience with Java goes back to 2016. It all started thanks to Minecraft servers, I helped to make / made minigames and in-game experiences. I'm still learning and practising Java as of today."
+      },
+      "cssReact": {
+        "es": "Mi experiencia de CSS sale de un grado superior de desarrollo de aplicaciones web. En cuanto a React todavía estoy investigándolo y aprendiendo día a día, ya que soy bastante nuevo.",
+        "en": "My experience with CSS comes out of a grado superior (\"Certificate of Higher Education\"). I'm still learning and investigating about React nowadays as I'm quite new to this."
+      },
+      "mysql": {
+        "es": "El grado superior que he estudiado me ha abierto los ojos en cuanto a bases de datos. Hemos estudiado a fondo las bases de datos, su funcionamiento, diseño y lenguajes.",
+        "en": "My recent studies have really opened my eyes about databases. We've studied deeply how they work, how to design them efficiently and the languages needed to oprate with them."
+      }
+    },
+    "contact": {
+      "description": {
+        "es": "Me puedes contactar por estos medios:",
+        "en": "You can contact me through this channels:"
+      },
+      "email": {
+        "es": "Mi correo electrónico",
+        "en": "My email"
+      },
+      "twitter": {
+        "es": "Mensaje privado en Twitter",
+        "en": "Private Message on Twitter"
+      }
+    },
+    "hytaleObjectives": {
+      "server": {
+        "es": "Servidor de Comunidad con Minijuegos",
+        "en": "Community Server with Minigames"
+      },
+      "series": {
+        "es": "Series Variadas (Aventura, Minijuegos, etc.)",
+        "en": "Miscellaneous Series (Adventure Mode, Minigames, etc.)"
+      },
+      "liveEvents": {
+        "es": "Eventos Especiales en Directo",
+        "en": "Special Live Events"
+      }
+    }
+  },
+  "navbar": {
+    "main": {
+      "es": "Principal",
+      "en": "Home"
+    },
+    "experience": {
+      "es": "Experiencia",
+      "en": "Experience"
+    },
+    "contact": {
+      "es": "Contacto",
+      "en": "Contact"
+    }
+  },
+  "copyright": {
+    "es": "Todos los derechos reservados.",
+    "en": "All rights reserved."
+  },
+  "notAffiliated": {
+    "es": "No afiliado con Hytale o Hypixel Studios.",
+    "en": "Not affiliated with Hytale or Hypixel Studios."
+  }
+}

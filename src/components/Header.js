@@ -1,0 +1,87 @@
+import React, { useContext } from "react";
+import { Context } from "../other/Context";
+import logo_name from "../logo-name.png";
+
+import language from "../data/language.json";
+
+const Header = () => {
+  const { lang, setLang } = useContext(Context);
+
+  return (
+    <header>
+      <div className="md:py-5 fixed top-0 z-10 inline-flex justify-center w-full h-auto px-3 py-16 mb-24 overflow-hidden text-center bg-gray-900">
+        <a href="https://www.hugoyt.me/">
+          <img
+            src={logo_name}
+            alt=""
+            className="left-12 top-5 absolute w-auto h-16 m-auto mb-3 text-center"
+          />
+        </a>
+
+        <label
+          for="menu-toggle"
+          className="md:hidden top-8 right-10 absolute inline-flex text-right cursor-pointer"
+        >
+          <svg
+            height="80"
+            width="80"
+            className="w-[35px] h-[35px] text-white fill-current"
+          >
+            <path d="M4 10h24a2 2 0 000-4H4a2 2 0 000 4zm24 4H4a2 2 0 000 4h24a2 2 0 000-4zm0 8H4a2 2 0 000 4h24a2 2 0 000-4z" />
+          </svg>
+        </label>
+
+        <select
+          name="language"
+          id="language-selector"
+          className="absoulte rounded-xl top-8 right-10 md:inline-flex hover:bg-red-500 hover:text-gray-200 absolute hidden w-32 h-8 px-2 font-medium text-right text-white bg-red-600 cursor-pointer"
+          onChange={(ls) => {
+            setLang(ls.target.value);
+          }}
+        >
+          <option value="en">English</option>
+          <option value="es">Español</option>
+        </select>
+
+        <input className="hidden" type="checkbox" id="menu-toggle" />
+
+        <ul
+          id="menu"
+          className="md:inline-flex md:flex-initial justify-center hidden gap-5 py-5 mt-auto mb-auto text-xl font-semibold text-center text-white align-middle"
+        >
+          <li>
+            <a className="hover:text-yellow-200" href="#">
+              {language.navbar.main[lang]}
+            </a>
+          </li>
+          <li>
+            <a className="hover:text-yellow-200" href="#youtube">
+              YouTube
+            </a>
+          </li>
+          <li>
+            <a className="hover:text-yellow-200" href="#experiencia">
+              {language.navbar.experience[lang]}
+            </a>
+          </li>
+          <li>
+            <a className="hover:text-yellow-200" href="#contacto">
+              {language.navbar.contact[lang]}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+  );
+};
+
+function ChangeLanguage() {
+  const { lang, setLang } = useContext(Context);
+  var selectBox = document.getElementById("language-selector");
+  var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+
+  setLang(selectedValue);
+  alert(selectedValue);
+}
+
+export default Header;
